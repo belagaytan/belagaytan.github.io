@@ -1,0 +1,201 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 2000px;
+}
+
+.container {
+    width: 1050px;
+    margin: 0 auto;
+}
+
+.clear {
+    clear: both;
+}
+/* -------------------------------------------------------------------------- */
+
+/* --------------------------------- HEADER --------------------------------- */
+header {
+    width: 100%;
+    height: 100vh;
+    background-color: #263238;
+    background-image: url('/images/header_image.svg');
+    background-size: 48%;
+    background-position: 22vh 10vw;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+header .container {
+    padding-top: 20px;
+    position: relative;
+}
+
+header .container .logo {
+    width: 4vw;
+    float: left;
+}
+
+header .container nav {
+    position: absolute;
+    left: 43vh;
+    top: 2.4vh;
+}
+
+header .container nav ul {
+    list-style: none;
+}
+
+header .container nav ul li {
+    float: left;
+    font-size: .85rem;
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: .08rem;
+}
+
+header .container nav ul li:nth-child(2)::after, 
+header .container nav ul li:nth-child(2)::before {
+    content: "|";
+    display: inline-block;
+    padding: 0 20px;
+    opacity: .1;
+}
+
+header .container nav ul li:nth-child(2){
+    margin: 0 1px;
+}
+
+header .container nav ul li:hover {
+    color: #ff725e;
+    cursor: pointer;
+}
+
+header .container button {
+    float: right;
+    background-color: #222d32;
+    border-radius: 20px;
+    border: none;
+    padding: .8rem 1.8rem;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: .85rem;
+    letter-spacing: .08rem;
+    margin-top: .02rem;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+header .container button:hover {
+    color: #ff725e;
+    cursor: pointer;
+    opacity: 1;
+}
+
+header main {
+    position: absolute;
+    top: 190px;
+    left: 920px;
+    color: white;
+}
+
+header main p {
+    padding: 0;
+    margin: 0;
+    font-size: 6rem;
+    font-weight: 700;
+}
+
+header main p:first-of-type {
+    font-size: 3.8rem;
+}
+
+header main p:nth-child(2) {
+    color: #ff725e;
+    font-weight: 900;
+    margin-top: 30px;
+}
+
+header main p:last-of-type {
+    font-size: 1.7rem;
+    letter-spacing: .18rem;
+    margin-top: 40px;
+}
+
+header main p span {
+    color: #ff725e;
+}
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------- ABOUT ME -------------------------------- */
+.about_me {
+    background-color: #1b2327;
+    height: 100vh;
+    /* border-bottom-style:solid; */
+    /* border-bottom-color: white; */
+    /* border-bottom-width:1px; */
+    background-image: url('/images/about_me_image.svg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 58vw 15vh;
+    background-size: 30%;
+    
+}
+
+.about_me .container .about_me_text {
+    width: 45%;
+    margin-top: 40px;
+}
+
+.about_me .container h2 {
+    font-size: 9rem;
+    text-align: center;
+    color: #263238;
+    margin: 0;
+    text-transform: lowercase;
+}
+
+.about_me .container h3 {
+    font-size: 1.8rem;
+    margin: 0;
+    text-align: left;
+    color: #ff725e;
+    letter-spacing: .1rem;
+}
+
+.about_me .container p {
+    color: white;
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+.about_me .container .about_me_socialmedia h4 {
+    color: #ff725e;
+    font-size: 1rem;
+    text-transform: capitalize;
+    letter-spacing: .1rem;
+}
+
+.about_me .container .about_me_socialmedia ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+.about_me .container .about_me_socialmedia ul li {
+    display: inline-block;
+    margin: 0 16px 0 0;
+    font-size: 1.4rem;
+    color: white;
+}
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------- PORTFOLIO ------------------------------- */
+.portfolio {
+    background-color: #111111;
+}
